@@ -2,38 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://threedesigner.in"),
-
-  title: {
-    default: "Three Designers | Web Design, Websites, Apps & Digital Solutions",
-    template: "%s | Three Designers",
-  },
+  title: "Three Designers | Web Design & Website Development",
 
   description:
-    "Three Designers creates professional websites, web applications, mobile apps and social media solutions for businesses, creators and brands.",
+    "Three Designers creates professional websites, web applications, mobile apps and digital solutions for businesses, creators and brands.",
 
   applicationName: "Three Designers",
 
-  keywords: [
-    "Three Designers",
-    "Three Designer",
-    "web designer",
-    "web design",
-    "website designer",
-    "website development",
-    "website design company",
-    "web design services",
-    "business website",
-    "professional website design",
-    "mobile app development",
-    "web app development",
-    "social media management",
-    "digital solutions",
-    "website designer India",
-    "web designer India",
+  authors: [
+    {
+      name: "Three Designers",
+    },
   ],
 
-  authors: [{ name: "Three Designers" }],
   creator: "Three Designers",
   publisher: "Three Designers",
 
@@ -47,28 +28,34 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
     },
   },
 
   openGraph: {
-    type: "website",
-    url: "https://threedesigner.in",
-    siteName: "Three Designers",
-    title: "Three Designers | Web Design, Websites, Apps & Digital Solutions",
+    title: "Three Designers | Web Design & Website Development",
+
     description:
-      "Professional websites, web apps, mobile apps and social media solutions for businesses, creators and brands.",
+      "Professional web design, website development, web applications, mobile apps and digital solutions by Three Designers.",
+
+    url: "https://threedesigner.in",
+
+    siteName: "Three Designers",
+
     locale: "en_IN",
+
+    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Three Designers | Web Design & Digital Solutions",
+
+    title: "Three Designers | Web Design & Website Development",
+
     description:
-      "Professional websites, apps, web applications and social media solutions.",
+      "Professional web design, website development, web applications and digital solutions by Three Designers.",
   },
+
+  metadataBase: new URL("https://threedesigner.in"),
 };
 
 export default function RootLayout({
